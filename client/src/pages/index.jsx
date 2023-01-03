@@ -1,0 +1,12 @@
+export { default as Dashboard } from './Dashboard/Dashboard';
+export { default as ForgotPassword } from './ForgotPassword/ForgotPassword';
+export { default as Login } from './Login/Login';
+export { default as Manage } from './Manage/Manage';
+export { default as Monitor } from './Monitor/Monitor';
+export { default as Projects } from './Projects/Projects';
+export { default as Register } from './Register/Register';
+export { default as SingleProject } from './SingleProject/SingleProject';
+export { default as SingleRequest } from './SingleRequest/SingleRequest';
+export { default as SingleTask } from './SingleTask/SingleTask';
+export { default as Statistics } from './Statistics/Statistics';
+export { default as Tasks } from './Tasks/Tasks';
