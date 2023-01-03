@@ -4,7 +4,7 @@ function ToggleButton() {
     const [toggle, setToggle] = useState(false);
 
     const handleToggle = () => {
-        setToggle(!toggle)
+      setToggle(!toggle)
     }
   return (
     <div>
