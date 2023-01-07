@@ -6,6 +6,7 @@ function Input({...props}) {
 
   return (
     <TextInput
+    radius="sm"
     size="md"
     value={value}
     onChange={(event) => setValue(event.currentTarget.value)}

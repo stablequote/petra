@@ -1,14 +1,21 @@
-function PasswordInput({...Children}) {
+import {PasswordInput as MantinePasswordInput} from '@mantine/core';
+// import { IconEyeCheck, IconEyeOff } from '@tabler/icons';
+
+function PasswordInput({...children}) {
   return (
-    <div className="input password-input">
-        <label htmlFor="password">
-        <input 
-        type="password" 
-        name='password' 
-        placeholder='Enter password' 
-        />
-        </label>
-    </div>
+    <MantinePasswordInput
+    placeholder="Password"
+    label="Password"
+    // description="Password must include at least one letter, number and special character"
+    radius="sm"
+    size="md"
+    withAsterisk
+    defaultValue="secret"
+    // visibilityToggleIcon={({ reveal, size }) =>
+    //   reveal ? <IconEyeOff size={size} /> : <IconEyeCheck size={size} />
+    // }
+    {...children}
+  />
   )
 }
 

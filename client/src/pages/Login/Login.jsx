@@ -1,18 +1,27 @@
 import { useState } from 'react'
+import { redirect, useNavigate } from 'react-router-dom';
+import { Button } from '@mantine/core';
 import Input from '../../components/Input/Input'
 import PasswordInput from '../../components/PasswordInput/PasswordInput'
+// import Button from '../../components/Button/Button'
 // import './Login.css'
 
 function Login() {
-  const [input, setInput] = useState("");
+  const navigate = useNavigate();
+
+  const [input, setInput] = useState({
+    email: "",
+    password: ""
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    alert("Logged in!!!")
+    navigate("/dashboard")
   }
 
   const handleChange = (e) => {
     setInput(e.target.value)
+    console.log(e.target.value)
   }
 
   return (
@@ -26,12 +35,14 @@ function Login() {
         <Input 
         type="email"
         placeholder="Enter E-mail address"
+        value={input.email}
         onChange={handleChange}
         />
         <PasswordInput 
+        value={input.password}
         onChange={handleChange}
         />
-        <button onClick={() => handleSubmit()}>Login</button>
+        <Button variant='contained' color="cyan" onClick={(e) => handleSubmit(e)}>Login</Button>
       </form>
      </div>
     </div>

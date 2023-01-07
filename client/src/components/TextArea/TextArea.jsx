@@ -1,6 +1,21 @@
+import { useState } from 'react';
+import { Textarea as MantineTextArea } from '@mantine/core';
+
 function TextArea() {
+  const [value, setValue] = useState('');
+
   return (
-    <textarea name="" id="" cols="30" rows="10" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odio reiciendis unde deserunt perspiciatis?</textarea>
+    <MantineTextArea
+    placeholder="Your comment"
+    label="Write comment"
+    variant="filled"
+    radius="md"
+    size="md"
+    autosize
+    maxRows={4}
+    value={value} 
+    onChange={(event) => setValue(event.currentTarget.value)}
+    />
   )
 }
 
