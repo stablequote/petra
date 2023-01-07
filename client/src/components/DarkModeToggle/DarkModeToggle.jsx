@@ -1,9 +1,11 @@
+import {Button} from '@mantine/core';
+
 function DarkModeToggle(props) {
   return (
     <>
-    <button className='dark-mode-toggle'  onClick={() => {props.toggleDark()}}>
+    <Button variant='filled' color="cyan" className='dark-mode-toggle'  onClick={() => {props.toggleDark()}}>
         Toggle
-    </button>
+    </Button>
     </>
   )
 }
