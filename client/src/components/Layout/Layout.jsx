@@ -1,10 +1,10 @@
-import React from 'react'
+import {Container} from '@mantine/core'
 
-function Layout() {
+function Layout({children}) {
   return (
-    <div className='layout-container'>
-        
-    </div>
+    <Container maxWidth="md">
+      {children}
+    </Container>
   )
 }
 

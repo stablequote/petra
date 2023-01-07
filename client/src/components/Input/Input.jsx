@@ -1,12 +1,16 @@
-function Input({...children}) {
+import { useState } from 'react';
+import { TextInput } from '@mantine/core';
+
+function Input({...props}) {
+  const [value, setValue] = useState('');
+
   return (
-    <div className="input">
-        <label htmlFor="email">
-        <input
-        children
-        />
-        </label>
-    </div>
+    <TextInput
+    size="md"
+    value={value}
+    onChange={(event) => setValue(event.currentTarget.value)}
+    {...props}
+    />
   )
 }
 
