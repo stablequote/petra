@@ -1,15 +1,7 @@
-import { useState } from 'react';
-
-function DarkModeToggle() {
-
-    const [toggleDarkMode, setToggleDarkMode] = useState(false);
-
-    const handleDarkModeToggle = () => {
-        setToggleDarkMode(!toggleDarkMode)
-    }
+function DarkModeToggle(props) {
   return (
     <>
-    <button className='dark-mode-toggle' onClick={handleDarkModeToggle}>
+    <button className='dark-mode-toggle'  onClick={() => {props.toggleDark()}}>
         Toggle
     </button>
     </>

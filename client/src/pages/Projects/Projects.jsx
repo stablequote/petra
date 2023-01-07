@@ -5,6 +5,7 @@ function Projects() {
     <div>
         <div className="container">
             <div className="inner-container">
+              <h3>projects page</h3>
                 {/* Filtering Sidebar */}
                 {/* Projects Map */}
             </div>

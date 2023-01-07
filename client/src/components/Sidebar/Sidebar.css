@@ -1,0 +1,18 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgb(45, 104, 231);
+    width: 20%;
+    height: 100% !important;
+}
+
+.sidebar-wrapper {
+    /* padding: 0.6rem; */
+    margin-top: 8rem;
+    margin: 6rem auto;
+}
+
+.control-buttons li{
+    margin-bottom: 1rem;
+}

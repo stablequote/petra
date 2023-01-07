@@ -4,6 +4,7 @@ function Statistics() {
   return (
     <div className='statistics'>
         <div className="chart-wrapper">
+          <h3>Statistics page</h3>
             <Chart />
             <div className="chart-control">
                 <div className="chart-control-wrapper">

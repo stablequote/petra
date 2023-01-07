@@ -1,0 +1,25 @@
+.btn{
+    border: 0;
+    outline: 0;
+    width: 30px;
+    height: 20px;
+    padding: 0.3rem 0.44rem;
+    color: var(--white);
+    border-radius: 0.6rem;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: normal;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.btn-accept{
+    color: var(--white);
+    background-color: var(--green);
+}
+
+.btn-deny{
+    color: var(--white);
+    background-color: var(--red);
+}
+
